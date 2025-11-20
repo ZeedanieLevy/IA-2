@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — Crafted Candles</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="brand">Crafted Candles</h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="register.html">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="auth">
+      <h2>Login</h2>
+      <form id="login-form" class="form">
+        <label>
+          Username
+          <input type="text" name="username" required />
+        </label>
+
+        <label>
+          Password
+          <input type="password" name="password" required minlength="6" />
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Login</button>
+          <a href="register.html" class="btn ghost">Register</a>
+        </div>
+      </form>
+      <p id="login-msg" class="muted"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner"><p>© Crafted Candles</p></div>
+  </footer>
+
+<script src="app.js"></script>
+</body>
+</html>
