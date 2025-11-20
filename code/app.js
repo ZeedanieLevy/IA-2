@@ -74,7 +74,8 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("users", JSON.stringify(users));
 
     alert("Registration successful! Redirecting to login...");
-    window.location.href = "login.html";
+   //REDIRECT TO LOGIN PAGE
+    window.location.href = "code/login.html";
   });
 
  
@@ -96,8 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     alert("Login successful!");
-   //Redirect to login page
-    window.location.href = "code/login.html";
+    window.location.href = "login.html";
   });
 
   // CART PAGE LOGIC
@@ -319,4 +319,5 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+
 
