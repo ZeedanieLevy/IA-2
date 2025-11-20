@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Invoice — Crafted Candles</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Invoice styling */
+    .invoice {
+      max-width: 900px;
+      margin: 24px auto;
+      padding: 24px;
+      background: #fff;
+      color: #111;
+      border-radius: 12px;
+      font-family: Arial, sans-serif;
+    }
+
+    .invoice h2, .invoice h3 {
+      margin: 12px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+
+    th, td {
+      border: 1px solid #999;
+      padding: 8px 12px;
+      text-align: left;
+    }
+
+    th {
+      background: #eee;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+
+    .no-print { margin-top: 20px; text-align: center; }
+    @media print { .no-print { display: none; } }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <section id="invoice" class="invoice">
+      <!-- Populated by app.js -->
+    </section>
+
+    <div class="no-print">
+      <button onclick="window.print()" class="btn">Print Invoice</button>
+      <a href="index.html" class="btn ghost">Back to Shop</a>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

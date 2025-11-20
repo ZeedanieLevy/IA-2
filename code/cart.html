@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cart — Crafted Candles</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="brand">Crafted Candles</h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="checkout.html">Checkout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="cart">
+      <h2>Your Cart</h2>
+
+      <div class="cart-table-wrap">
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Price</th>
+              <th>Qty</th>
+              <th>Sub-total</th>
+              <th></th>
+            </tr>
+          </thead>
+
+          <tbody id="cart-items">
+            <!-- Populated by app.js -->
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="3">Subtotal</td>
+              <td id="cart-sub">$0.00</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="3">Discount</td>
+              <td id="cart-discount">-$0.00</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="3">Tax (Jamaica 15%)</td>
+              <td id="cart-tax">$0.00</td>
+              <td></td>
+            </tr>
+            <tr class="total-row">
+              <td colspan="3">Total</td>
+              <td id="cart-total">$0.00</td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <div class="cart-actions">
+        <button id="clear-cart" class="btn ghost">Clear All</button>
+        <a href="checkout.html" class="btn">Check Out</a>
+        <a href="index.html" class="btn ghost">Close</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© Crafted Candles</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
