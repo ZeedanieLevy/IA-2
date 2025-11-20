@@ -97,7 +97,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     alert("Login successful!");
-    window.location.href = "login.html";
+   //Redirect to homepage
+    window.location.href = "home.html";
   });
 
   // CART PAGE LOGIC
@@ -319,5 +320,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+
 
 
